@@ -179,7 +179,5 @@ console.log(pickMystery())
 // ITERATION 3
 
 function revealMystery(envelope) {
-    return `${envelope.suspect.firstName} ${envelope.suspect.lastName} killed Mr. Boddy using the ${envelope.weapon.name} in the ${envelope.room.name}!`
 }
 
-console.log(revealMystery(pickMystery()))
