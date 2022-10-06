@@ -162,13 +162,13 @@ function selectRandom(arr) {
     }
 }
 
-console.log(selectRandom(weaponsArray))
+//console.log(selectRandom(weaponsArray))
 
 function pickMystery() {
     let randomSet = { 
         suspect: selectRandom(suspectsArray),
         room: selectRandom(roomsArray),
-        weapon: selectRandom(weaponsArray ),
+        weapon: selectRandom(weaponsArray),
     };
     return randomSet
 }
@@ -178,7 +178,8 @@ console.log(pickMystery())
 
 // ITERATION 3
 
-function revealMystery(envelopePickMystery) {
-
+function revealMystery(envelope) {
+    return `${envelope.suspect.firstName}!`
 }
 
+revealMystery(pickMystery())
